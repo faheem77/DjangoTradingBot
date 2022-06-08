@@ -80,14 +80,14 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'db_django_trading_bot',
-        'USER': 'django_trading_bot',
-        'PASSWORD': 'cool',
+        'USER': 'postgres',
+        'PASSWORD': 123,
         'HOST': 'localhost',
         'PORT': '5432',
     }
 }
 
-
+DEFAULT_AUTO_FIELD='django.db.models.AutoField' 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
 

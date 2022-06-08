@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils import timezone
 
+from django.shortcuts import get_object_or_404
 
 class BinanceKey(models.Model):
     """Model with api's keys, cryptocurrencies and markets"""
@@ -20,6 +21,7 @@ class Bank(models.Model):
     amount_currency_one = models.FloatField()
     amount_currency_two = models.FloatField()
     amount_currency_three = models.FloatField()
+
 
 
 class Bot(models.Model):
